@@ -2,47 +2,53 @@
   <defs>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F5E8C7" />
-      <stop offset="30%" stop-color="#D4AF37" />
-      <stop offset="70%" stop-color="#C5A059" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="65%" stop-color="#C5A059" />
       <stop offset="100%" stop-color="#9A7B38" />
     </linearGradient>
-    <linearGradient id="goldGlowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5E8C7" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9A7B38" />
     </linearGradient>
   </defs>
 
-  <!-- Outer Ring with Subtle Double Border Motif -->
-  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGrad)" stroke-width="4.5" />
-  <circle cx="100" cy="100" r="86" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.65" />
+  <!-- Outer double ring border -->
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#goldGrad)" stroke-width="3.5" />
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.7" />
 
-  <!-- The Classical Serif Letter 'M' -->
-  <g fill="url(#goldGrad)">
-    <!-- Left vertical stem & bracketed serifs -->
-    <path d="M 52,142 L 74,142 L 74,138 L 66,138 L 66,68 L 74,68 L 74,64 L 52,64 L 52,68 L 60,68 L 60,138 L 52,138 Z" />
-    
-    <!-- Diagonal strokes meeting in center vertex -->
-    <path d="M 64,68 L 97,126 L 103,126 L 136,68 L 126,68 L 100,114 L 74,68 Z" />
-    
-    <!-- Right vertical stem & serifs -->
-    <path d="M 126,142 L 148,142 L 148,138 L 140,138 L 140,68 L 148,68 L 148,64 L 126,64 L 126,68 L 134,68 L 134,138 L 126,138 Z" />
-  </g>
+  <!-- Bold serif M — large, centered, dominant -->
+  <!-- Left outer stem -->
+  <rect x="38" y="58" width="12" height="82" fill="url(#goldGrad2)" rx="1"/>
+  <!-- Left inner diagonal going down-right to center -->
+  <polygon points="50,58 62,58 100,118 88,118" fill="url(#goldGrad2)"/>
+  <!-- Right inner diagonal going down-left to center -->
+  <polygon points="150,58 138,58 100,118 112,118" fill="url(#goldGrad2)"/>
+  <!-- Right outer stem -->
+  <rect x="150" y="58" width="12" height="82" fill="url(#goldGrad2)" rx="1"/>
+  <!-- Bottom serifs -->
+  <rect x="33" y="136" width="22" height="5" fill="url(#goldGrad2)" rx="1"/>
+  <rect x="145" y="136" width="22" height="5" fill="url(#goldGrad2)" rx="1"/>
+  <!-- Top serifs -->
+  <rect x="33" y="57" width="22" height="5" fill="url(#goldGrad2)" rx="1"/>
+  <rect x="145" y="57" width="22" height="5" fill="url(#goldGrad2)" rx="1"/>
 
-  <!-- Leaf sprig branch arching along the right side of M -->
-  <g fill="url(#goldGrad)">
-    <!-- Arching stem -->
-    <path d="M 135,134 Q 152,104 145,56" fill="none" stroke="url(#goldGrad)" stroke-width="2.6" stroke-linecap="round" />
-    
-    <!-- Right-facing leaves -->
-    <path d="M 142,120 C 151,116 160,120 158,128 C 150,130 144,126 142,120 Z" />
-    <path d="M 146,101 C 156,96 165,100 162,109 C 154,111 148,107 146,101 Z" />
-    <path d="M 148,81 C 157,75 165,79 162,88 C 154,89 149,86 148,81 Z" />
-    <path d="M 147,64 C 154,56 162,60 159,68 C 153,70 149,68 147,64 Z" />
-    <path d="M 145,56 C 148,46 156,48 153,55 C 149,57 146,57 145,56 Z" />
-    
-    <!-- Left-facing inner leaves -->
-    <path d="M 137,110 C 128,106 125,97 131,92 C 136,96 137,104 137,110 Z" />
-    <path d="M 142,90 C 133,85 131,77 136,72 C 141,76 142,84 142,90 Z" />
-    <path d="M 144,72 C 136,68 135,60 140,56 C 144,60 145,66 144,72 Z" />
-  </g>
+  <!-- Laurel / leaf sprig growing from right of M, upward -->
+  <!-- Main stem arching up -->
+  <path d="M 148,135 Q 160,100 152,52" fill="none" stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Leaves on right side of stem (outward) -->
+  <path d="M 155,120 C 167,114 175,120 172,130 C 163,132 157,127 155,120 Z" fill="url(#goldGrad)"/>
+  <path d="M 158,102 C 170,95 178,101 175,111 C 166,113 160,109 158,102 Z" fill="url(#goldGrad)"/>
+  <path d="M 159,83 C 170,75 177,82 174,92 C 165,93 160,89 159,83 Z" fill="url(#goldGrad)"/>
+  <path d="M 156,65 C 165,56 172,62 169,72 C 162,73 157,70 156,65 Z" fill="url(#goldGrad)"/>
+  <path d="M 152,52 C 158,42 165,46 162,54 C 157,56 153,55 152,52 Z" fill="url(#goldGrad)"/>
+
+  <!-- Leaves on left side of stem (inward) -->
+  <path d="M 150,112 C 141,107 138,98 144,93 C 149,97 151,105 150,112 Z" fill="url(#goldGrad)"/>
+  <path d="M 154,93 C 145,87 143,79 149,74 C 154,78 155,86 154,93 Z" fill="url(#goldGrad)"/>
+  <path d="M 154,74 C 146,69 145,61 151,57 C 155,61 156,68 154,74 Z" fill="url(#goldGrad)"/>
+
+  <!-- Small berry/dot at tip -->
+  <circle cx="152" cy="50" r="3" fill="url(#goldGrad)"/>
 </svg>
