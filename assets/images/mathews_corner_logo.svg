@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E8C7" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#9A7B38" />
+    </linearGradient>
+    <linearGradient id="goldGlowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring with Subtle Double Border Motif -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGrad)" stroke-width="4.5" />
+  <circle cx="100" cy="100" r="86" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.65" />
+
+  <!-- The Classical Serif Letter 'M' -->
+  <g fill="url(#goldGrad)">
+    <!-- Left vertical stem & bracketed serifs -->
+    <path d="M 52,142 L 74,142 L 74,138 L 66,138 L 66,68 L 74,68 L 74,64 L 52,64 L 52,68 L 60,68 L 60,138 L 52,138 Z" />
+    
+    <!-- Diagonal strokes meeting in center vertex -->
+    <path d="M 64,68 L 97,126 L 103,126 L 136,68 L 126,68 L 100,114 L 74,68 Z" />
+    
+    <!-- Right vertical stem & serifs -->
+    <path d="M 126,142 L 148,142 L 148,138 L 140,138 L 140,68 L 148,68 L 148,64 L 126,64 L 126,68 L 134,68 L 134,138 L 126,138 Z" />
+  </g>
+
+  <!-- Leaf sprig branch arching along the right side of M -->
+  <g fill="url(#goldGrad)">
+    <!-- Arching stem -->
+    <path d="M 135,134 Q 152,104 145,56" fill="none" stroke="url(#goldGrad)" stroke-width="2.6" stroke-linecap="round" />
+    
+    <!-- Right-facing leaves -->
+    <path d="M 142,120 C 151,116 160,120 158,128 C 150,130 144,126 142,120 Z" />
+    <path d="M 146,101 C 156,96 165,100 162,109 C 154,111 148,107 146,101 Z" />
+    <path d="M 148,81 C 157,75 165,79 162,88 C 154,89 149,86 148,81 Z" />
+    <path d="M 147,64 C 154,56 162,60 159,68 C 153,70 149,68 147,64 Z" />
+    <path d="M 145,56 C 148,46 156,48 153,55 C 149,57 146,57 145,56 Z" />
+    
+    <!-- Left-facing inner leaves -->
+    <path d="M 137,110 C 128,106 125,97 131,92 C 136,96 137,104 137,110 Z" />
+    <path d="M 142,90 C 133,85 131,77 136,72 C 141,76 142,84 142,90 Z" />
+    <path d="M 144,72 C 136,68 135,60 140,56 C 144,60 145,66 144,72 Z" />
+  </g>
+</svg>
