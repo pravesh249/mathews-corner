@@ -132,7 +132,7 @@ const ROOMS_DATA = {
     type: 'bathtub',
     bathType: 'Scenic Window Bathtub + Rain Shower',
     teaGrade: 'The Revitalizing Cup (Golden Elixir)',
-    image: 'assets/images/room_elixir.jpg',
+    image: 'assets/images/mathews_corner_bathtub_view.jpg',
     description: 'Celebrating the curative, soul-warming elixir of high-altitude orthodox teas. Elixir offers a handcrafted wooden mountain headboard, serene workspace with high-speed internet, private sunset balcony, and a warm private bath that captures the golden twilight over Peermade.',
     amenities: [
       'Queen-size bed with handcrafted mountain wood headboard',
